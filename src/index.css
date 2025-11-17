@@ -1,0 +1,49 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    :root {
+        --primary-blue: #1E88E5;
+        --primary-blue-dark: #1565C0;
+        --primary-blue-light: #42A5F5;
+    }
+    
+    body{
+        @apply bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-50 transition-colors duration-300;
+        @apply [scrollbar-color:_#cbd5e1_transparent] dark:[scrollbar-color:_#475569_transparent];
+    }
+    
+    * {
+        @apply transition-colors duration-200;
+    }
+}
+@layer components {
+  .sidebar-group{
+      @apply flex w-full flex-col gap-y-2; 
+  }
+
+  .sidebar-group-title{
+    @apply overflow-hidden text-ellipsis text-sm pl-2 font-medium text-slate-600 dark:text-slate-400;
+  }
+
+  .sidebar-item{
+    @apply flex h-[40px] w-[full] flex-shrink-0 items-center gap-x-3 rounded-lg  text-base font-medium text-slate-900 transition-all duration-200 hover:bg-blue-50 dark:text-slate-50 dark:hover:bg-slate-800 dark:hover:text-blue-400; 
+  }
+  
+  .sidebar-item.active{
+    @apply bg-blue-500 text-white dark:bg-blue-600 dark:text-white shadow-md;
+  }
+
+  .title {
+    @apply text-3xl font-semibold text-slate-900 transition-colors dark:text-slate-50;
+  }
+
+  .btn-ghost{
+    @apply flex h-10 flex-shrink-0 items-center justify-center gap-x-2 rounded-lg p-2 text-slate-400 transition-all duration-200 hover:bg-blue-50 hover:text-slate-600 dark:hover:bg-slate-800 dark:hover:text-blue-400 dark:text-slate-400;   
+  }
+  .input{
+    @apply hidden h-10 flex-shrink-0 items-center gap-x-2 rounded-lg border border-slate-300 px-2 text-base text-slate-900 transition-colors has-[input:focus]:border-blue-500 dark:border-slate-700 dark:text-slate-50 dark:focus:border-blue-600 md:flex md:w-auto lg:w-80;
+}
+}

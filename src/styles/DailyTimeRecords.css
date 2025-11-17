@@ -1,0 +1,1170 @@
+/* Daily Time Records Styles */
+
+.daily-time-records {
+  width: 100%;
+  margin-top: 70px;
+}
+
+.daily-time-records-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: clamp(1rem, 3vw, 1.5rem);
+}
+
+.daily-time-records-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.daily-time-records-title {
+  margin-top: 1.8rem;
+  font-size: clamp(1.25rem, 3vw, 1.5rem);
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.dark .daily-time-records-title {
+  color: #f8fafc;
+}
+
+.daily-time-records-import-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1rem;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.daily-time-records-import-button:hover {
+  background: #2563eb;
+}
+
+.daily-time-records-import-button:active {
+  transform: scale(0.98);
+}
+
+.daily-time-records-icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+
+/* Filters Section */
+.daily-time-records-date-filters {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.daily-time-records-date-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  flex: 1;
+  min-width: 200px;
+}
+
+.dark .daily-time-records-date-input {
+  background: #1e293b;
+  border-color: #334155;
+}
+
+.daily-time-records-date-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: #64748b;
+  flex-shrink: 0;
+}
+
+.daily-time-records-date-field {
+  flex: 1;
+  border: none;
+  background: transparent;
+  color: #f8fafc;
+  font-size: 0.875rem;
+  outline: none;
+}
+
+.dark .daily-time-records-date-field {
+  color: #f8fafc;
+}
+
+.daily-time-records-date-field::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  cursor: pointer;
+}
+
+/* Search Section */
+.daily-time-records-search-section {
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.dark .daily-time-records-search-section {
+  background: #1e293b;
+}
+
+.daily-time-records-search-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.daily-time-records-search-input-wrapper {
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.daily-time-records-search-icon {
+  position: absolute;
+  left: 0.75rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  color: #64748b;
+  pointer-events: none;
+}
+
+.daily-time-records-search-input {
+  width: 100%;
+  padding: 0.625rem 0.75rem 0.625rem 2.75rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  color: #0f172a;
+  background: white;
+  transition: all 0.2s;
+}
+
+.dark .daily-time-records-search-input {
+  background: #334155;
+  border-color: #475569;
+  color: #f8fafc;
+}
+
+.daily-time-records-search-input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+/* Date Filter Styles */
+.daily-time-records-date-filter {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.dark .daily-time-records-date-filter {
+  border-top-color: #334155;
+}
+
+.daily-time-records-date-filter-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #475569;
+}
+
+.dark .daily-time-records-date-filter-label {
+  color: #94a3b8;
+}
+
+.daily-time-records-date-filter-icon {
+  width: 1rem;
+  height: 1rem;
+  color: #64748b;
+}
+
+.dark .daily-time-records-date-filter-icon {
+  color: #94a3b8;
+}
+
+.daily-time-records-date-inputs {
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.daily-time-records-date-input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+  flex: 1;
+  min-width: 150px;
+}
+
+.daily-time-records-date-label {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.dark .daily-time-records-date-label {
+  color: #94a3b8;
+}
+
+.daily-time-records-date-input {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  color: #0f172a;
+  background: white;
+  transition: all 0.2s;
+  width: 100%;
+}
+
+.dark .daily-time-records-date-input {
+  background: #334155;
+  border-color: #475569;
+  color: #f8fafc;
+}
+
+.daily-time-records-date-input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.daily-time-records-date-clear-button {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.5rem 0.75rem;
+  background: #f1f5f9;
+  color: #64748b;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+  height: fit-content;
+}
+
+.dark .daily-time-records-date-clear-button {
+  background: #334155;
+  border-color: #475569;
+  color: #94a3b8;
+}
+
+.daily-time-records-date-clear-button:hover {
+  background: #e2e8f0;
+  color: #334155;
+}
+
+.dark .daily-time-records-date-clear-button:hover {
+  background: #475569;
+  color: #cbd5e1;
+}
+
+/* Table Section */
+.daily-time-records-table-section {
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.dark .daily-time-records-table-section {
+  background: #1e293b;
+}
+
+.daily-time-records-table-wrapper {
+  background: #1e293b;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  overflow-x: auto;
+  border: 1px solid #334155;
+}
+
+.dark .daily-time-records-table-wrapper {
+  background: #1e293b;
+  border: 1px solid #334155;
+}
+
+.daily-time-records-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  min-width: 900px;
+}
+
+@media (max-width: 1024px) {
+  .daily-time-records-table {
+    min-width: 800px;
+    font-size: 0.8125rem;
+  }
+  
+  .daily-time-records-table th,
+  .daily-time-records-table td {
+    padding: 0.625rem 0.75rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .daily-time-records-table {
+    min-width: 700px;
+    font-size: 0.75rem;
+  }
+  
+  .daily-time-records-table th,
+  .daily-time-records-table td {
+    padding: 0.5rem 0.625rem;
+  }
+  
+  .daily-time-records-table th:nth-child(1),
+  .daily-time-records-table td:nth-child(1) {
+    width: 20%;
+  }
+  
+  .daily-time-records-table th:nth-child(2),
+  .daily-time-records-table td:nth-child(2) {
+    width: 10%;
+  }
+  
+  .daily-time-records-table th:nth-child(3),
+  .daily-time-records-table th:nth-child(4),
+  .daily-time-records-table th:nth-child(5),
+  .daily-time-records-table td:nth-child(3),
+  .daily-time-records-table td:nth-child(4),
+  .daily-time-records-table td:nth-child(5) {
+    width: 12%;
+  }
+  
+  .daily-time-records-table th:nth-child(6),
+  .daily-time-records-table th:nth-child(7),
+  .daily-time-records-table th:nth-child(8),
+  .daily-time-records-table td:nth-child(6),
+  .daily-time-records-table td:nth-child(7),
+  .daily-time-records-table td:nth-child(8) {
+    width: 11%;
+  }
+  
+  .daily-time-records-search-section {
+    padding: 0.75rem;
+  }
+  
+  .daily-time-records-date-inputs {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .daily-time-records-date-input-wrapper {
+    min-width: 100%;
+  }
+  
+  .daily-time-records-date-clear-button {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .daily-time-records-container {
+    padding: 0.75rem;
+  }
+  
+  .daily-time-records-table th,
+  .daily-time-records-table td {
+    padding: 0.375rem 0.5rem;
+    font-size: 0.6875rem;
+  }
+  
+  .daily-time-records-import-button {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+.daily-time-records-table thead {
+  background: #0f172a;
+}
+
+.dark .daily-time-records-table thead {
+  background: #0f172a;
+}
+
+.daily-time-records-table th {
+  padding: 1rem;
+  text-align: left;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #94a3b8;
+  white-space: nowrap;
+  vertical-align: middle;
+  border-bottom: 1px solid #334155;
+}
+
+.dark .daily-time-records-table th {
+  color: #94a3b8;
+  border-bottom: 1px solid #334155;
+}
+
+.daily-time-records-table th:nth-child(1) {
+  width: 18%;
+}
+
+.daily-time-records-table th:nth-child(2) {
+  width: 10%;
+}
+
+.daily-time-records-table th:nth-child(3),
+.daily-time-records-table th:nth-child(4),
+.daily-time-records-table th:nth-child(5) {
+  width: 11%;
+}
+
+.daily-time-records-table th:nth-child(6),
+.daily-time-records-table th:nth-child(7),
+.daily-time-records-table th:nth-child(8) {
+  width: 10%;
+}
+
+.daily-time-records-table tbody tr {
+  border-bottom: 1px solid #1e293b;
+  background: #1e293b;
+  transition: background-color 0.2s;
+}
+
+.dark .daily-time-records-table tbody tr {
+  border-bottom: 1px solid #334155;
+  background: #1e293b;
+}
+
+.daily-time-records-table tbody tr:hover {
+  background: #334155;
+}
+
+.dark .daily-time-records-table tbody tr:hover {
+  background: #334155;
+}
+
+.daily-time-records-table td {
+  padding: 1rem;
+  border-top: 1px solid #1e293b;
+  vertical-align: middle;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  color: #f8fafc;
+}
+
+.dark .daily-time-records-table td {
+  border-color: #334155;
+  color: #f8fafc;
+}
+
+.daily-time-records-cell-employee {
+  font-weight: 500;
+  color: #f8fafc;
+}
+
+.dark .daily-time-records-cell-employee {
+  color: #f8fafc;
+}
+
+.daily-time-records-cell-text {
+  font-size: 0.875rem;
+  color: #64748b;
+  width: 100%;
+  display: block;
+}
+
+.dark .daily-time-records-cell-text {
+  color: #94a3b8;
+}
+
+.daily-time-records-absent-yes {
+  color: #ef4444;
+  font-weight: 500;
+}
+
+.daily-time-records-absent-no {
+  color: #10b981;
+  font-weight: 500;
+}
+
+/* Loading and Empty States */
+.daily-time-records-loading,
+.daily-time-records-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  color: #64748b;
+}
+
+.dark .daily-time-records-loading,
+.dark .daily-time-records-empty {
+  color: #94a3b8;
+}
+
+.daily-time-records-loading-icon {
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 1rem;
+  color: #3b82f6;
+}
+
+.daily-time-records-empty-icon {
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 1rem;
+  color: #cbd5e1;
+}
+
+.dark .daily-time-records-empty-icon {
+  color: #475569;
+}
+
+/* Dialog Styles */
+.daily-time-records-dialog-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 50;
+  animation: fadeIn 0.2s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.daily-time-records-dialog-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 600px;
+  max-height: 90vh;
+  background: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  z-index: 51;
+  animation: slideUp 0.3s;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin: 0 clamp(16px, 4vw, 24px);
+}
+
+.dark .daily-time-records-dialog-content {
+  background: #1e293b;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -40%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.daily-time-records-dialog-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.dark .daily-time-records-dialog-header {
+  border-color: #334155;
+}
+
+.daily-time-records-dialog-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.dark .daily-time-records-dialog-title {
+  color: #f8fafc;
+}
+
+.daily-time-records-dialog-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  background: transparent;
+  border-radius: 0.5rem;
+  color: #64748b;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.daily-time-records-dialog-close:hover {
+  background: #f1f5f9;
+  color: #0f172a;
+}
+
+.dark .daily-time-records-dialog-close:hover {
+  background: #334155;
+  color: #f8fafc;
+}
+
+.daily-time-records-dialog-body {
+  padding: 1.5rem;
+  overflow-y: auto;
+  flex: 1;
+}
+
+/* Dropzone Styles */
+.daily-time-records-dropzone {
+  border: 2px dashed #cbd5e1;
+  border-radius: 0.5rem;
+  padding: 3rem 2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  background: #f8fafc;
+  position: relative;
+}
+
+.dark .daily-time-records-dropzone {
+  background: #334155;
+  border-color: #475569;
+}
+
+.daily-time-records-dropzone:hover {
+  border-color: #3b82f6;
+  background: #f1f5f9;
+}
+
+.dark .daily-time-records-dropzone:hover {
+  background: #475569;
+}
+
+.daily-time-records-dropzone-dragging {
+  border-color: #3b82f6;
+  background: #eff6ff;
+}
+
+.dark .daily-time-records-dropzone-dragging {
+  background: #1e3a8a;
+}
+
+.daily-time-records-dropzone-has-file {
+  border-color: #10b981;
+  background: #f0fdf4;
+}
+
+.dark .daily-time-records-dropzone-has-file {
+  background: #14532d;
+}
+
+.daily-time-records-file-input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.daily-time-records-dropzone-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  cursor: pointer;
+}
+
+.daily-time-records-dropzone-icon {
+  width: 3rem;
+  height: 3rem;
+  color: #64748b;
+}
+
+.dark .daily-time-records-dropzone-icon {
+  color: #94a3b8;
+}
+
+.daily-time-records-dropzone-dragging .daily-time-records-dropzone-icon,
+.daily-time-records-dropzone-has-file .daily-time-records-dropzone-icon {
+  color: #3b82f6;
+}
+
+.daily-time-records-dropzone-text {
+  font-size: 0.875rem;
+  color: #64748b;
+  margin: 0;
+}
+
+.dark .daily-time-records-dropzone-text {
+  color: #94a3b8;
+}
+
+.daily-time-records-dropzone-text-bold {
+  font-weight: 600;
+  color: #3b82f6;
+}
+
+.daily-time-records-dropzone-text-small {
+  font-size: 0.75rem;
+  color: #94a3b8;
+}
+
+.dark .daily-time-records-dropzone-text-small {
+  color: #64748b;
+}
+
+.daily-time-records-dropzone-file-name {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #0f172a;
+  margin: 0;
+}
+
+.dark .daily-time-records-dropzone-file-name {
+  color: #f8fafc;
+}
+
+.daily-time-records-dropzone-remove {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  background: rgba(239, 68, 68, 0.1);
+  border-radius: 0.5rem;
+  color: #ef4444;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.daily-time-records-dropzone-remove:hover {
+  background: rgba(239, 68, 68, 0.2);
+}
+
+/* Format Info */
+.daily-time-records-format-info {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: #f8fafc;
+  border-radius: 0.5rem;
+  border: 1px solid #e2e8f0;
+}
+
+.dark .daily-time-records-format-info {
+  background: #334155;
+  border-color: #475569;
+}
+
+.daily-time-records-format-info-title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 0.5rem;
+}
+
+.dark .daily-time-records-format-info-title {
+  color: #f8fafc;
+}
+
+.daily-time-records-format-info-code {
+  display: block;
+  font-size: 0.75rem;
+  font-family: monospace;
+  color: #3b82f6;
+  background: #eff6ff;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  margin-bottom: 0.5rem;
+  word-break: break-all;
+}
+
+.dark .daily-time-records-format-info-code {
+  background: #1e3a8a;
+  color: #93c5fd;
+}
+
+.daily-time-records-format-info-example {
+  font-size: 0.75rem;
+  color: #64748b;
+  margin: 0;
+}
+
+.dark .daily-time-records-format-info-example {
+  color: #94a3b8;
+}
+
+/* Progress Bar */
+.daily-time-records-progress-section {
+  margin-top: 1.5rem;
+}
+
+.daily-time-records-progress-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+  color: #64748b;
+}
+
+.dark .daily-time-records-progress-header {
+  color: #94a3b8;
+}
+
+.daily-time-records-progress-bar {
+  width: 100%;
+  height: 0.5rem;
+  background: #e2e8f0;
+  border-radius: 9999px;
+  overflow: hidden;
+}
+
+.dark .daily-time-records-progress-bar {
+  background: #334155;
+}
+
+.daily-time-records-progress-bar-fill {
+  height: 100%;
+  background: #3b82f6;
+  border-radius: 9999px;
+  transition: width 0.3s ease;
+}
+
+/* Summary */
+.daily-time-records-summary {
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  background: #f8fafc;
+  border-radius: 0.5rem;
+  border: 1px solid #e2e8f0;
+}
+
+.dark .daily-time-records-summary {
+  background: #334155;
+  border-color: #475569;
+}
+
+.daily-time-records-summary-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 1rem;
+}
+
+.dark .daily-time-records-summary-title {
+  color: #f8fafc;
+}
+
+.daily-time-records-summary-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 640px) {
+  .daily-time-records-summary-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.daily-time-records-summary-stat {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: white;
+  border-radius: 0.5rem;
+  border: 1px solid #e2e8f0;
+}
+
+.dark .daily-time-records-summary-stat {
+  background: #1e293b;
+  border-color: #334155;
+}
+
+.daily-time-records-summary-icon {
+  width: 2rem;
+  height: 2rem;
+  flex-shrink: 0;
+}
+
+.daily-time-records-summary-icon.success {
+  color: #10b981;
+}
+
+.daily-time-records-summary-icon.error {
+  color: #ef4444;
+}
+
+.daily-time-records-summary-icon.warning {
+  color: #f59e0b;
+}
+
+.daily-time-records-summary-icon:not(.success):not(.error):not(.warning) {
+  color: #64748b;
+}
+
+.dark .daily-time-records-summary-icon:not(.success):not(.error):not(.warning) {
+  color: #94a3b8;
+}
+
+.daily-time-records-summary-stat-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.dark .daily-time-records-summary-stat-value {
+  color: #f8fafc;
+}
+
+.daily-time-records-summary-stat-label {
+  font-size: 0.75rem;
+  color: #64748b;
+  margin: 0;
+  margin-top: 0.25rem;
+}
+
+.dark .daily-time-records-summary-stat-label {
+  color: #94a3b8;
+}
+
+.daily-time-records-summary-errors {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.dark .daily-time-records-summary-errors {
+  border-color: #334155;
+}
+
+.daily-time-records-summary-duplicates {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.dark .daily-time-records-summary-duplicates {
+  border-color: #334155;
+}
+
+.daily-time-records-summary-duplicates-title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 0.75rem;
+}
+
+.dark .daily-time-records-summary-duplicates-title {
+  color: #f8fafc;
+}
+
+.daily-time-records-summary-duplicates-list {
+  max-height: 200px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.daily-time-records-summary-duplicate {
+  font-size: 0.75rem;
+  padding: 0.5rem;
+  background: #fef3c7;
+  border-radius: 0.25rem;
+  border: 1px solid #fde68a;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.dark .daily-time-records-summary-duplicate {
+  background: #78350f;
+  border-color: #92400e;
+}
+
+.daily-time-records-summary-duplicate-row {
+  font-weight: 600;
+  color: #92400e;
+}
+
+.dark .daily-time-records-summary-duplicate-row {
+  color: #fbbf24;
+}
+
+.daily-time-records-summary-duplicate-info {
+  color: #78350f;
+}
+
+.dark .daily-time-records-summary-duplicate-info {
+  color: #fcd34d;
+}
+
+.daily-time-records-summary-duplicates-more {
+  font-size: 0.75rem;
+  color: #92400e;
+  font-style: italic;
+  margin: 0;
+  padding: 0.5rem;
+}
+
+.dark .daily-time-records-summary-duplicates-more {
+  color: #fbbf24;
+}
+
+.daily-time-records-summary-errors-title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 0.75rem;
+}
+
+.dark .daily-time-records-summary-errors-title {
+  color: #f8fafc;
+}
+
+.daily-time-records-summary-errors-list {
+  max-height: 200px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.daily-time-records-summary-error {
+  font-size: 0.75rem;
+  padding: 0.5rem;
+  background: #fef2f2;
+  border-radius: 0.25rem;
+  border: 1px solid #fecaca;
+}
+
+.dark .daily-time-records-summary-error {
+  background: #7f1d1d;
+  border-color: #991b1b;
+}
+
+.daily-time-records-summary-error-row {
+  font-weight: 600;
+  color: #991b1b;
+  margin-right: 0.5rem;
+}
+
+.dark .daily-time-records-summary-error-row {
+  color: #fca5a5;
+}
+
+.daily-time-records-summary-error-message {
+  color: #dc2626;
+}
+
+.dark .daily-time-records-summary-error-message {
+  color: #f87171;
+}
+
+/* Dialog Actions */
+.daily-time-records-dialog-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.dark .daily-time-records-dialog-actions {
+  border-color: #334155;
+}
+
+.daily-time-records-dialog-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1.25rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.daily-time-records-dialog-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.daily-time-records-dialog-button.primary {
+  background: #3b82f6;
+  color: white;
+}
+
+.daily-time-records-dialog-button.primary:hover:not(:disabled) {
+  background: #2563eb;
+}
+
+.daily-time-records-dialog-button.secondary {
+  background: #f1f5f9;
+  color: #64748b;
+}
+
+.dark .daily-time-records-dialog-button.secondary {
+  background: #334155;
+  color: #94a3b8;
+}
+
+.daily-time-records-dialog-button.secondary:hover:not(:disabled) {
+  background: #e2e8f0;
+}
+
+.dark .daily-time-records-dialog-button.secondary:hover:not(:disabled) {
+  background: #475569;
+}
+

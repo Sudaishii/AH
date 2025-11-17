@@ -1,0 +1,378 @@
+.leave-requests {
+  width: 100%;
+  max-width: 1600px;
+  margin: 70px auto 0;
+  padding: 0 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.leave-requests-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.leave-requests-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.leave-requests-subtitle {
+  margin-top: 0.25rem;
+  color: #475569;
+}
+
+.dark .leave-requests-title {
+  color: #f8fafc;
+}
+
+.dark .leave-requests-subtitle {
+  color: #94a3b8;
+}
+
+.leave-requests-meta {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.leave-requests-meta-card {
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.75rem;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  text-align: center;
+}
+
+.leave-requests-meta-card.pending {
+  background: #fef3c7;
+  border-color: #fcd34d;
+}
+
+.dark .leave-requests-meta-card {
+  background: #1e293b;
+  border-color: #334155;
+}
+
+.leave-requests-meta-label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #64748b;
+}
+
+.dark .leave-requests-meta-label {
+  color: #cbd5e1;
+}
+
+.leave-requests-meta-value {
+  display: block;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.dark .leave-requests-meta-value {
+  color: #f8fafc;
+}
+
+.leave-requests-filter-bar {
+  background: white;
+  border-radius: 0.75rem;
+  border: 1px solid #e2e8f0;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.dark .leave-requests-filter-bar {
+  background: #1e293b;
+  border-color: #334155;
+}
+
+.leave-requests-search {
+  flex: 1;
+  position: relative;
+}
+
+.leave-requests-search input {
+  width: 100%;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.5rem;
+  padding: 0.625rem 0.75rem 0.625rem 2.5rem;
+  font-size: 0.875rem;
+  background: white;
+  color: #0f172a;
+}
+
+.dark .leave-requests-search input {
+  background: #334155;
+  border-color: #475569;
+  color: #f8fafc;
+}
+
+.leave-requests-search input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.15);
+}
+
+.dark .leave-requests-search input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3);
+}
+
+.leave-requests-search input::placeholder {
+  color: #94a3b8;
+}
+
+.dark .leave-requests-search input::placeholder {
+  color: #64748b;
+}
+
+.leave-requests-search-icon {
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1rem;
+  height: 1rem;
+  color: #94a3b8;
+}
+
+.leave-requests-status-filter {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  background: #f8fafc;
+}
+
+.dark .leave-requests-status-filter {
+  background: #334155;
+  border-color: #475569;
+}
+
+.leave-requests-status-filter select {
+  border: none;
+  background: transparent;
+  font-size: 0.875rem;
+  color: #0f172a;
+}
+
+.dark .leave-requests-status-filter select {
+  color: #f8fafc;
+}
+
+.leave-requests-status-filter select:focus {
+  outline: none;
+}
+
+.leave-requests-filter-icon {
+  width: 1rem;
+  height: 1rem;
+  color: #64748b;
+}
+
+.leave-requests-table-wrapper {
+  background: white;
+  border-radius: 0.75rem;
+  border: 1px solid #e2e8f0;
+  overflow: hidden;
+}
+
+.dark .leave-requests-table-wrapper {
+  background: #1e293b;
+  border-color: #334155;
+}
+
+.leave-requests-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.leave-requests-table th {
+  text-align: left;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #64748b;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #e2e8f0;
+  background: #f8fafc;
+}
+
+.dark .leave-requests-table th {
+  background: #0f172a;
+  border-bottom: 1px solid #334155;
+  color: #94a3b8;
+}
+
+.leave-requests-table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 0.875rem;
+  color: #0f172a;
+  background: white;
+}
+
+.dark .leave-requests-table td {
+  background: #1e293b;
+  border-bottom: 1px solid #334155;
+  color: #f8fafc;
+}
+
+.leave-requests-table tbody tr:hover td {
+  background: #f1f5f9;
+}
+
+.dark .leave-requests-table tbody tr:hover td {
+  background: #334155;
+}
+
+.leave-requests-employee-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.leave-requests-employee-name {
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.dark .leave-requests-employee-name {
+  color: #f8fafc;
+}
+
+.leave-requests-employee-id {
+  font-size: 0.75rem;
+  color: #94a3b8;
+}
+
+.dark .leave-requests-employee-id {
+  color: #64748b;
+}
+
+.leave-status-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.leave-status-badge.pending {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.leave-status-badge.approved {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.leave-status-badge.declined {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.leave-requests-actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.leave-requests-action-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.5rem 0.9rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.leave-requests-action-button.approve {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.leave-requests-action-button.decline {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.leave-requests-action-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.leave-requests-action-icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.leave-requests-action-icon.spinning {
+  animation: spin 1s linear infinite;
+}
+
+.leave-requests-loading,
+.leave-requests-empty {
+  padding: 4rem 2rem;
+  text-align: center;
+  color: #94a3b8;
+}
+
+.leave-requests-loading-icon {
+  width: 2rem;
+  height: 2rem;
+  margin-bottom: 1rem;
+  animation: spin 1s linear infinite;
+  color: #3b82f6;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@media (max-width: 1024px) {
+  .leave-requests-table th,
+  .leave-requests-table td {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .leave-requests-filter-bar {
+    flex-direction: column;
+  }
+
+  .leave-requests-status-filter {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .leave-requests-table {
+    display: block;
+    overflow-x: auto;
+  }
+}
+

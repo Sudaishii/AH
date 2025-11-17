@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.navbar {
+  background: linear-gradient(90deg, #1E88E5, #42A5F5);
+  color: white;
+  width: 100%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+  .nav-container {
+    display: flex;
+    align-items: center;      
+    justify-content: space-between; 
+    padding: 0.75rem 2rem;
+    max-width: 1300px;
+    height: 4.8rem;          
+    margin: 0 auto;           
+  }
+
+
+/* Left: Logo */
+.nav-logo {
+  display: flex;
+  align-items: center;
+  margin-top: .2rem;
+}
+
+.logo-img {
+  width: 70px;
+  height: 70px;
+}
+
+
+
+.logo-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: .3rem;
+}
+
+/* Center: Nav tabs take 50% */
+.nav-tabs {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-tablist {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  background: transparent;
+}
+
+/* Right: Get Started */
+.nav-action {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.get-started-btn {
+  
+  display: inline-flex;
+  align-items: center;
+  background-color: white;
+  color: #1E88E5;
+  border: none;
+  padding: 0.7rem 1.25rem;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.get-started-btn:hover {
+  background-color: #e3f2fd;
+  transform: translateY(-2px);
+}
+
+.login-btn {
+  display: inline-flex;
+  align-items: center;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 0.7rem 1.25rem;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-right: 1rem;
+}
+
+.login-btn:hover {
+  background-color: white;
+  color: #1E88E5;
+  transform: translateY(-2px);
+}
+
+
+/* Nav tabs */
+.nav-tab {
+  position: relative;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #f0f0f0;
+  transition: color 0.25s ease;
+}
+
+.nav-tab span {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.25rem 0;
+  font-size: 1.1rem;
+}
+
+/* Active (selected) tab */
+.nav-tab[data-selected] {
+  color: #fff; /* active white */
+  font-weight: 600;
+}
+
+/* Hover effect */
+.nav-tab:hover {
+  color: #fff;
+}
+
+/* Animated underline (selection indicator) */
+.selection-indicator {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  background-color: #fff; /* white underline to match the gradient */
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+.nav-tab[data-selected] .selection-indicator {
+  transform: scaleX(1);
+}
+
+/* Services Dropdown */
+.services-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 1rem;
+  min-width: 250px;
+  z-index: 1001;
+}
+
+.dropdown-item {
+  padding: 0.5rem 0;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.dropdown-item:hover {
+  color: #007bff;
+}
+
+/* Dropdown Arrow */
+.dropdown-arrow {
+  margin-left: 0.25rem;
+  transition: transform 0.3s ease;
+}
+
+.rotated {
+  transform: rotate(180deg);
+}
+
+

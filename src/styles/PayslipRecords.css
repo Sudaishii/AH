@@ -1,0 +1,615 @@
+/* Payslip Records Styles */
+
+.payslip-records-container {
+  
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.payslip-records-header {
+  margin-bottom: 1.5rem;
+}
+
+.payslip-records-title {
+  margin-top: 1.8rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #f8fafc;
+  margin-bottom: 0.5rem;
+}
+
+.dark .payslip-records-title {
+  color: #f8fafc;
+}
+
+.payslip-records-subtitle {
+  font-size: 0.875rem;
+  color: #94a3b8;
+}
+
+.dark .payslip-records-subtitle {
+  color: #94a3b8;
+}
+
+.payslip-records-filters {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.payslip-records-search {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: #1e293b;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+  border: 1px solid #334155;
+}
+
+.dark .payslip-records-search {
+  background: #1e293b;
+  border: 1px solid #334155;
+}
+
+.payslip-records-filter-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.payslip-records-filter-select {
+  flex: 1;
+  min-width: 150px;
+  padding: 0.75rem 1rem;
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 0.5rem;
+  color: #f8fafc;
+  font-size: 0.875rem;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.dark .payslip-records-filter-select {
+  background: #1e293b;
+  border-color: #334155;
+  color: #f8fafc;
+}
+
+.payslip-records-filter-select:hover {
+  border-color: #475569;
+}
+
+.payslip-records-filter-select:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.payslip-records-search-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: #64748b;
+}
+
+.payslip-records-search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #f8fafc;
+  font-size: 0.875rem;
+}
+
+.dark .payslip-records-search-input {
+  color: #f8fafc;
+}
+
+.payslip-records-search-input::placeholder {
+  color: #64748b;
+}
+
+.payslip-records-loading,
+.payslip-records-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  text-align: center;
+  color: #64748b;
+}
+
+.payslip-records-loading-icon,
+.payslip-records-empty-icon {
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 1rem;
+  color: #94a3b8;
+}
+
+.payslip-records-table-wrapper {
+  background: #1e293b;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  overflow-x: auto;
+  border: 1px solid #334155;
+}
+
+.dark .payslip-records-table-wrapper {
+  background: #1e293b;
+  border: 1px solid #334155;
+}
+
+.payslip-records-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 800px;
+}
+
+.payslip-records-table thead {
+  background: #1e293b;
+}
+
+.dark .payslip-records-table thead {
+  background: #0f172a;
+}
+
+.payslip-records-table th {
+  padding: 1rem;
+  text-align: left;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid #334155;
+}
+
+.dark .payslip-records-table th {
+  color: #94a3b8;
+  border-bottom: 1px solid #334155;
+}
+
+.payslip-records-table th.numeric-column {
+  text-align: right;
+}
+
+.payslip-employee-name {
+  font-weight: 600;
+  color: #f8fafc;
+}
+
+.dark .payslip-employee-name {
+  color: #f8fafc;
+}
+
+.payslip-net-pay {
+  font-weight: 600;
+  color: #10b981;
+}
+
+.dark .payslip-net-pay {
+  color: #34d399;
+}
+
+.payslip-records-table tbody tr {
+  border-bottom: 1px solid #1e293b;
+  transition: background-color 0.2s;
+  background: #1e293b;
+}
+
+.dark .payslip-records-table tbody tr {
+  border-bottom: 1px solid #334155;
+  background: #1e293b;
+}
+
+.payslip-records-table tbody tr:hover {
+  background: #334155;
+}
+
+.dark .payslip-records-table tbody tr:hover {
+  background: #334155;
+}
+
+.payslip-records-table td {
+  padding: 1rem;
+  font-size: 0.875rem;
+  color: #f8fafc;
+}
+
+.dark .payslip-records-table td {
+  color: #f8fafc;
+}
+
+.payslip-records-table td.numeric-column {
+  text-align: right;
+}
+
+.payslip-records-view-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.payslip-records-view-btn:hover {
+  background: #2563eb;
+}
+
+.payslip-delete-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  background: transparent;
+  border: none;
+  border-radius: 0.375rem;
+  color: #ef4444;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.payslip-delete-button:hover {
+  background: rgba(239, 68, 68, 0.1);
+  color: #dc2626;
+}
+
+.dark .payslip-delete-button {
+  color: #f87171;
+}
+
+.dark .payslip-delete-button:hover {
+  background: rgba(239, 68, 68, 0.2);
+  color: #fca5a5;
+}
+
+.payslip-delete-icon {
+  width: 1.125rem;
+  height: 1.125rem;
+}
+
+/* Delete Confirmation Dialog */
+.payslip-delete-dialog-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 50;
+  animation: fadeIn 0.2s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.payslip-delete-dialog-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 400px;
+  background: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  z-index: 51;
+  animation: slideUp 0.3s;
+  overflow: hidden;
+}
+
+.dark .payslip-delete-dialog-content {
+  background: #1e293b;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -40%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.payslip-delete-dialog-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #0f172a;
+  padding: 1.5rem 1.5rem 1rem;
+}
+
+.dark .payslip-delete-dialog-title {
+  color: #f8fafc;
+}
+
+.payslip-delete-dialog-body {
+  padding: 0 1.5rem 1.5rem;
+}
+
+.payslip-delete-dialog-body p {
+  margin: 0 0 0.75rem;
+  color: #475569;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.dark .payslip-delete-dialog-body p {
+  color: #94a3b8;
+}
+
+.payslip-delete-dialog-body strong {
+  color: #0f172a;
+  font-weight: 600;
+}
+
+.dark .payslip-delete-dialog-body strong {
+  color: #f8fafc;
+}
+
+.payslip-delete-dialog-warning {
+  color: #ef4444 !important;
+  font-weight: 500;
+}
+
+.dark .payslip-delete-dialog-warning {
+  color: #f87171 !important;
+}
+
+.payslip-delete-dialog-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  padding: 1rem 1.5rem 1.5rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.dark .payslip-delete-dialog-actions {
+  border-top-color: #334155;
+}
+
+.payslip-delete-dialog-cancel,
+.payslip-delete-dialog-confirm {
+  padding: 0.625rem 1.25rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.payslip-delete-dialog-cancel {
+  background: #f1f5f9;
+  color: #64748b;
+}
+
+.dark .payslip-delete-dialog-cancel {
+  background: #334155;
+  color: #94a3b8;
+}
+
+.payslip-delete-dialog-cancel:hover {
+  background: #e2e8f0;
+  color: #334155;
+}
+
+.dark .payslip-delete-dialog-cancel:hover {
+  background: #475569;
+  color: #cbd5e1;
+}
+
+.payslip-delete-dialog-confirm {
+  background: #ef4444;
+  color: white;
+}
+
+.payslip-delete-dialog-confirm:hover {
+  background: #dc2626;
+}
+
+.payslip-status-paid {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.dark .payslip-status-paid {
+  background: #065f46;
+  color: #d1fae5;
+}
+
+.payslip-status-pending {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.dark .payslip-status-pending {
+  background: #92400e;
+  color: #fef3c7;
+}
+
+.payslip-status-draft {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background: #e5e7eb;
+  color: #374151;
+}
+
+.dark .payslip-status-draft {
+  background: #374151;
+  color: #e5e7eb;
+}
+
+.payslip-status-unknown {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background: #374151;
+  color: #f8fafc;
+  text-transform: uppercase;
+}
+
+.dark .payslip-status-unknown {
+  background: #374151;
+  color: #f8fafc;
+}
+
+/* Dialog Styles */
+.payslip-dialog-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 50;
+}
+
+.payslip-dialog-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  max-width: 600px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  z-index: 51;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.dark .payslip-dialog-content {
+  background: #1e293b;
+}
+
+.payslip-dialog-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 1rem;
+}
+
+.dark .payslip-dialog-title {
+  color: #f8fafc;
+}
+
+.payslip-dialog-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.payslip-dialog-section {
+  padding: 1rem;
+  background: #f8fafc;
+  border-radius: 0.5rem;
+}
+
+.dark .payslip-dialog-section {
+  background: #334155;
+}
+
+.payslip-dialog-section h3 {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #64748b;
+  margin-bottom: 0.5rem;
+}
+
+.payslip-dialog-section p {
+  font-size: 1rem;
+  color: #0f172a;
+  font-weight: 500;
+}
+
+.dark .payslip-dialog-section p {
+  color: #f8fafc;
+}
+
+.payslip-dialog-deductions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.payslip-dialog-total {
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid #e2e8f0;
+  font-weight: 700;
+}
+
+.dark .payslip-dialog-total {
+  border-top: 1px solid #334155;
+}
+
+.payslip-dialog-net {
+  background: #dbeafe;
+  border: 2px solid #3b82f6;
+}
+
+.dark .payslip-dialog-net {
+  background: #1e3a8a;
+  border-color: #3b82f6;
+}
+
+.payslip-dialog-net-amount {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1e40af;
+}
+
+.dark .payslip-dialog-net-amount {
+  color: #93c5fd;
+}
+
+.payslip-dialog-close {
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.payslip-dialog-close:hover {
+  background: #2563eb;
+}
+

@@ -1,0 +1,54 @@
+.dashboard-hr {
+  max-width: 100%;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .dashboard-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .dashboard-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.kpi-card {
+  min-height: 150px;
+}
+
+.chart-card {
+  min-height: 400px;
+}
+
+.quick-action-btn {
+  cursor: pointer;
+}
+
+.quick-action-btn:active {
+  transform: scale(0.98);
+}
+
+.team-management-card {
+  width: 100%;
+}
+
+.team-members-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.team-member-row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
